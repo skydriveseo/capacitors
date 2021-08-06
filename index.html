@@ -1,15 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="noodp, noydir">
-<meta name="language" content="en-us">
+<meta name="language" content="es">
 <meta name="distribution" content="Global">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="High Voltage Diode" />
+<meta name="keywords" content="High Voltage Diode" />
 <title>High Voltage Diode</title>
+<meta name="distribution" content="A diode is a complex electrical component made of several different materials. When used in a common electrical appliance, a diode has a positive anode terminal that receives energy and a negative cathode which lets it out. ">
+<link rel="canonical" href="https://high-voltage-diode.netlify.app/" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 <link href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' rel='stylesheet' type='text/css'>  
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
 	*{ padding:0; margin:0; outline:none; border:none; list-style:none; text-decoration:none;}
 	body{ font-family:Roboto; font-size:19px;}
@@ -120,5 +126,44 @@
             </ul>
         </div>
     </footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="scrolltopcontrol.js"></script>
+<script>
+$(document).bind("contextmenu",function(e){
+  return false;
+    });
+	
+	
+
+    $(document).keydown(function (event) {
+    // Prevent F12 -
+    if (event.keyCode == 123 || 121) {
+       return false;
+    }
+    // Prevent Ctrl+a = disable select all
+    // Prevent Ctrl+u = disable view page source
+    // Prevent Ctrl+s = disable save
+    if (event.ctrlKey && (event.keyCode === 85 || event.keyCode === 83 || event.keyCode ===65 || event.keyCode ===67 || event.keyCode ===86 || event.keyCode ===17 || event.keyCode ===80 || event.keyCode ===121)) {
+       return false;
+    }
+    // Prevent Ctrl+Shift+I = disabled debugger console using keys open
+    else if (event.ctrlKey && event.shiftKey && event.keyCode === 73)
+    {
+       return false;
+    }
+    });
+
+$(document).ready(function(){  
+$(document).keydown(function(event) {  
+   //event.ctrlKey = check ctrl key is press or not  
+   //event.which = check for F7  
+   // event.which =check for v key  
+   if (event.ctrlKey==true && (event.which == '118' || event.which == '86')) {  
+      event.preventDefault();  
+      }  
+   });  
+});
+</script>
 </body>
 </html>
